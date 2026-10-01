@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>อำเภอภูกามยาว จ.พะเยา | Phu Kam Yao District</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Sarabun', sans-serif; }
+    .content p { text-indent: 2rem; margin-bottom: 1rem; }
+    .content ul { text-indent: 0; }
+    .highlight { background: #fef3c7; color: #92400e; font-weight: 700; padding: .1rem .35rem; border-radius: .35rem; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-amber-50 via-orange-50 to-amber-100 text-slate-800">
+  <header class="sticky top-0 z-10 bg-gradient-to-r from-amber-900 to-amber-950 text-amber-50 shadow-xl">
+    <div class="mx-auto flex max-w-5xl flex-col items-center justify-between gap-3 px-4 py-4 sm:flex-row">
+      <div><h1 id="title" class="text-xl font-bold sm:text-2xl">อำเภอภูกามยาว จ.พะเยา</h1><p id="subtitle" class="text-sm text-amber-300">ประวัติศาสตร์ความเป็นมาและข้อมูลท้องถิ่น</p></div>
+      <div class="flex gap-2"><button id="th" onclick="setLang('th')" class="rounded-lg bg-amber-600 px-3 py-1.5 font-semibold">ภาษาไทย</button><button id="en" onclick="setLang('en')" class="rounded-lg px-3 py-1.5 font-semibold text-amber-200">English</button></div>
+    </div>
+  </header>
+  <main class="mx-auto max-w-4xl px-4 py-8">
+    <article class="rounded-3xl border border-amber-200 bg-white/95 p-6 shadow-xl sm:p-10">
+      <span id="badge" class="inline-block rounded-full border border-amber-300 bg-amber-100 px-3 py-1 text-xs font-bold text-amber-900">ประวัติศาสตร์และสารสนเทศท้องถิ่น</span>
+      <h2 id="heading" class="my-5 text-3xl font-extrabold text-amber-800">อำเภอภูกามยาว</h2>
+      <div id="content" class="content text-base leading-relaxed sm:text-lg"></div>
+      <section class="mt-10 border-t-2 border-amber-200 pt-8 text-center">
+        <h3 id="landmark" class="text-xl font-bold text-amber-950">วัดป่าพุทธชินวงศาราม (ม่อนพญานาคราช)</h3>
+        <p id="landmarkDesc" class="mt-2 text-sm text-slate-600">ตั้งอยู่ ณ ตำบลห้วยแก้ว อำเภอภูกามยาว จังหวัดพะเยา</p>
+        <img class="mx-auto mt-4 max-w-md rounded-2xl border-4 border-white shadow-lg" src="https://placehold.co/600x400/fef3c7/78350f?text=Phu+Kam+Yao" alt="Phu Kam Yao">
+      </section>
+    </article>
+  </main>
+  <footer class="bg-amber-950 px-4 py-6 text-center text-sm text-amber-200">ระบบแสดงข้อมูลและแปลภาษาอำเภอภูกามยาว จังหวัดพะเยา © 2026</footer>
+  <script>
+    const data = {
+      th: { title:'อำเภอภูกามยาว จ.พะเยา', subtitle:'ประวัติศาสตร์ความเป็นมาและข้อมูลท้องถิ่นฉบับสมบูรณ์', badge:'ประวัติศาสตร์และสารสนเทศท้องถิ่น', heading:'อำเภอภูกามยาว', landmark:'วัดป่าพุทธชินวงศาราม (ม่อนพญานาคราช)', landmarkDesc:'ตั้งอยู่ ณ ตำบลห้วยแก้ว อำเภอภูกามยาว จังหวัดพะเยา โดดเด่นด้วยองค์สัตตนาคราชพญามุจรินท์โอบล้อมภูเขาทั้งลูก', content:`<p>อำเภอภูกามยาว <strong class="highlight">“ภูกามยาว”</strong> เป็นชื่อเมืองเก่าแก่เมืองหนึ่งในอดีตที่มีประวัติศาสตร์อันยาวนาน ภายหลังถูกเรียกขานใหม่ว่า <strong class="highlight">“เมืองพะเยา”</strong></p><p>อำเภอภูกามยาวตั้งอยู่ทางทิศตะวันออกของจังหวัดพะเยา มีพื้นที่ <strong class="highlight">๑๓๓,๐๑๙ ไร่</strong> ห่างจากตัวจังหวัด ๑๖ กิโลเมตร มีเขตการปกครอง ๓ ตำบล ได้แก่ ตำบลห้วยแก้ว ตำบลดงเจน และตำบลแม่อิง</p><h3 class="mt-6 text-xl font-bold text-amber-900">ข้อมูลการปกครองและอาณาเขต</h3><ul class="list-disc space-y-1 pl-6"><li>ทิศเหนือ ติดต่ออำเภอป่าแดด จังหวัดเชียงราย</li><li>ทิศใต้และทิศตะวันตก ติดต่ออำเภอเมืองพะเยา</li><li>ทิศตะวันออก ติดต่ออำเภอดอกคำใต้ จังหวัดพะเยา</li><li>มี ๓๓ หมู่บ้าน ๖,๗๗๘ หลังคาเรือน และประชากร ๒๓,๖๒๗ คน</li></ul><h3 class="mt-6 text-xl font-bold text-amber-900">ประวัติความเป็นมา</h3><p>เดิมอำเภอภูกามยาวได้รับการจัดตั้งเป็นกิ่งอำเภอภูกามยาวเมื่อวันที่ ๑ กรกฎาคม พ.ศ. ๒๕๔๐ และได้รับการยกฐานะเป็นอำเภอภูกามยาวเมื่อวันที่ ๘ กันยายน พ.ศ. ๒๕๕๐</p>` },
+      en: { title:'Phu Kam Yao District, Phayao', subtitle:'Comprehensive History and Local Information', badge:'History & Local Information', heading:'Phu Kam Yao District', landmark:'Wat Pa Phutthachinwongsaram (Mon Phayanak)', landmarkDesc:'Located in Huai Kaeo Subdistrict, Phu Kam Yao District, Phayao Province.', content:`<p><strong class="highlight">“Phu Kam Yao”</strong> is the name of an ancient city with a long history, later known as <strong class="highlight">“Mueang Phayao.”</strong></p><p>Phu Kam Yao District is located in eastern Phayao Province. It covers <strong class="highlight">133,019 rai</strong> and is 16 kilometers from the provincial capital. The district consists of three subdistricts: Huai Kaeo, Dong Chen, and Mae Ing.</p><h3 class="mt-6 text-xl font-bold text-amber-900">Administration and Boundaries</h3><ul class="list-disc space-y-1 pl-6"><li>North: Pa Daet District, Chiang Rai Province</li><li>South and west: Mueang Phayao District</li><li>East: Dok Khamtai District, Phayao Province</li><li>There are 33 villages, 6,778 households, and 23,627 residents.</li></ul><h3 class="mt-6 text-xl font-bold text-amber-900">History</h3><p>Phu Kam Yao was established as a minor district on 1 July 1997 and was upgraded to a full district on 8 September 2007.</p>` }
+    };
+    function setLang(lang) { const d=data[lang]; for (const id of ['title','subtitle','badge','heading','landmark','landmarkDesc']) document.getElementById(id).textContent=d[id]; document.getElementById('content').innerHTML=d.content; document.getElementById('th').className=lang==='th'?'rounded-lg bg-amber-600 px-3 py-1.5 font-semibold':'rounded-lg px-3 py-1.5 font-semibold text-amber-200'; document.getElementById('en').className=lang==='en'?'rounded-lg bg-amber-600 px-3 py-1.5 font-semibold':'rounded-lg px-3 py-1.5 font-semibold text-amber-200'; document.documentElement.lang=lang; }
+    setLang('th');
+  </script>
+</body>
+</html>
